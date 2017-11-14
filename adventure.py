@@ -23,6 +23,8 @@ while True:
         carrying.append(object)
         print 'You take the %s.' % object
         print 'You have with you:' + str(carrying)
+        if 'cow' in carrying and 'bread' in carrying:
+            print 'The cow is licking the bread. I wouldn\'t advise making a sandwich...'
     elif action == 'no':
         print 'You leave the %s behind.' % object
         if len(carrying) == 0:
