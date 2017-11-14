@@ -1,22 +1,26 @@
 locations = {
     (0, 0): {
-        'name': 'house',
-        'description': 'The house is deserted, but there is a loaf of bread on an old table in the front room.',
-        'object': 'bread'
+        'place': 'house',
+        'place_desc': 'The house is deserted, all the windows are broken and the door is hanging off its hinges.',
+        'object': 'bread',
+        'object_desc': 'There is a loaf of bread on an old table in the front room.'
     },
     (0, 1): {
-        'name': 'lake',
-        'description': 'The lake is full of fish and has several ducks swimming on it, as well as one lost penguin.',
-        'object': 'penguin'
+        'place': 'lake',
+        'place_desc': 'The lake is full of fish and has several ducks swimming on it.',
+        'object': 'penguin',
+        'object_desc': 'There is one lost penguin in the lake as well, which seems to have aspirations to be a duck.'
     },
     (1, 0): {
-        'name': 'park',
-        'description': 'People are walking their dogs in the park, while a lamb is grazing near to an empty bench.',
-        'object': 'lamb'
+        'place': 'park',
+        'place_desc': 'There are children playing in the park, and lots of people walking their dogs.',
+        'object': 'lamb',
+        'object_desc': 'There is a lamb grazing near to the bandstand, doing an excellent job of mowing the grass.'
     },
     (1, 1): {
-        'name': 'market',
-        'description': 'The market is full of cattle which are for sale, including one very hungry looking cow.',
-        'object': 'cow'
+        'place': 'market',
+        'place_desc': 'The market is very busy, with pens full of horses, sheep and cattle which are for sale.',
+        'object': 'cow',
+        'object_desc': 'There is one small cow standing on its own, looking very hungry.'
     },
 }
