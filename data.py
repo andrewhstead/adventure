@@ -1,4 +1,8 @@
 locations = {
+    (-1, 0, 0): {
+        'place': 'forest',
+        'description': 'The trees of the forest are covered in leaves, and many birds can be heard singing.'
+    },
     (0, 0, 0): {
         'place': 'house',
         'description': 'The house is deserted, all the windows are broken and the door is hanging off its hinges.'
@@ -34,44 +38,67 @@ locations = {
 }
 
 objects = {
+    'giraffe': {
+        'name': 'giraffe',
+        'def_location': (-1, 0, 0),
+        'cur_location': (-1, 0, 0),
+        'def_desc': 'There is a giraffe standing by one of the tallest trees, eating leaves from a high branch.',
+        'cur_desc': 'There is a giraffe standing by one of the tallest trees, eating leaves from a high branch.'
+    },
     'loaf of bread': {
         'name': 'loaf of bread',
-        'location': (0, 0, 0),
-        'description': 'There is a loaf of bread on an old table in the front room.'
+        'def_location': (0, 0, 0),
+        'cur_location': (0, 0, 0),
+        'def_desc': 'There is a loaf of bread on an old table in the front room.',
+        'cur_desc': 'There is a loaf of bread on an old table in the front room.'
     },
     'football': {
         'name': 'football',
-        'location': (0, 0, 1),
-        'description': 'There is a football resting in the gutter, which looks like it has been here a long time.'
+        'def_location': (0, 0, 1),
+        'cur_location': (0, 0, 1),
+        'def_desc': 'There is a football resting in the gutter, which looks like it has been here a long time.',
+        'cur_desc': 'There is a football resting in the gutter, which looks like it has been here a long time.'
     },
     'penguin': {
         'name': 'penguin',
-        'location': (0, 1, 0),
-        'description': 'There is one lost penguin in the lake as well, which seems to have aspirations to be a duck.'
+        'def_location': (0, 1, 0),
+        'cur_location': (0, 1, 0),
+        'def_desc': 'There is one lost penguin in the lake as well, which seems to have aspirations to be a duck.',
+        'cur_desc': 'There is one lost penguin in the lake as well, which seems to have aspirations to be a duck.'
     },
     'cat': {
         'name': 'cat',
-        'location': (-1, 1, 0),
-        'description': 'There is a cat prowling around, on the lookout for any mice that might appear.'
+        'def_location': (-1, 1, 0),
+        'cur_location': (-1, 1, 0),
+        'def_desc': 'There is a cat prowling around, on the lookout for any mice that might appear.',
+        'cur_desc': 'There is a cat prowling around, on the lookout for any mice that might appear.'
     },
     'lamb': {
         'name': 'lamb',
-        'location': (1, 0, 0),
-        'description': 'There is a lamb grazing near to the bandstand, doing an excellent job of mowing the grass.'
+        'def_location': (1, 0, 0),
+        'cur_location': (1, 0, 0),
+        'def_desc': 'There is a lamb grazing near to the bandstand, doing an excellent job of mowing the grass.',
+        'cur_desc': 'There is a lamb grazing near to the bandstand, doing an excellent job of mowing the grass.'
     },
     'rat': {
         'name': 'rat',
-        'location': (1, 0, -1),
-        'description': 'There is a very large rat nearby, with enormous front teeth.'
+        'def_location': (1, 0, -1),
+        'cur_location': (1, 0, -1),
+        'def_desc': 'There is a very large rat nearby, with enormous front teeth.',
+        'cur_desc': 'There is a very large rat nearby, with enormous front teeth.'
     },
     'cow': {
         'name': 'cow',
-        'location': (1, 1, 0),
-        'description': 'There is one small cow standing on its own, looking very hungry.'
+        'def_location': (1, 1, 0),
+        'cur_location': (1, 1, 0),
+        'def_desc': 'There is one small cow standing on its own, looking very hungry.',
+        'cur_desc': 'There is one small cow standing on its own, looking very hungry.'
     },
     'candyfloss': {
         'name': 'candyfloss',
-        'location': (1, 2, 0),
-        'description': 'There is some half-eaten candyfloss on the floor, with bits of grass stuck in it.'
+        'def_location': (1, 2, 0),
+        'cur_location': (1, 2, 0),
+        'def_desc': 'There is some half-eaten candyfloss on the floor, with bits of grass stuck in it.',
+        'cur_desc': 'There is some half-eaten candyfloss on the floor, with bits of grass stuck in it.'
     },
 }
