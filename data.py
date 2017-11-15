@@ -1,8 +1,4 @@
 locations = {
-    (-1, 0, 0): {
-        'place': 'forest',
-        'description': 'The trees of the forest are covered in leaves, and many birds can be heard singing.'
-    },
     (0, 0, 0): {
         'place': 'house',
         'description': 'The house is deserted, all the windows are broken and the door is hanging off its hinges.'
@@ -27,6 +23,14 @@ locations = {
         'place': 'sewer',
         'description': 'The sewer is very dark and smells horrendous - still, what on earth were you expecting?!'
     },
+    (2, 0, 0): {
+        'place': 'forest',
+        'description': 'The trees of the forest are covered in leaves, and many birds can be heard singing.'
+    },
+    (2, 0, 1): {
+        'place': 'tree top',
+        'description': 'The top of the tree is very high. There are birds nesting in several branches.'
+    },
     (1, 1, 0): {
         'place': 'market',
         'description': 'The market is very busy, with pens full of horses, sheep and cattle which are for sale.'
@@ -38,13 +42,6 @@ locations = {
 }
 
 objects = {
-    'giraffe': {
-        'name': 'giraffe',
-        'def_location': (-1, 0, 0),
-        'cur_location': (-1, 0, 0),
-        'def_desc': 'There is a giraffe standing by one of the tallest trees, eating leaves from a high branch.',
-        'cur_desc': 'There is a giraffe standing by one of the tallest trees, eating leaves from a high branch.'
-    },
     'loaf of bread': {
         'name': 'loaf of bread',
         'def_location': (0, 0, 0),
@@ -86,6 +83,20 @@ objects = {
         'cur_location': (1, 0, -1),
         'def_desc': 'There is a very large rat nearby, with enormous front teeth.',
         'cur_desc': 'There is a very large rat nearby, with enormous front teeth.'
+    },
+    'giraffe': {
+        'name': 'giraffe',
+        'def_location': (2, 0, 0),
+        'cur_location': (2, 0, 0),
+        'def_desc': 'There is a giraffe standing by one of the tallest trees, eating leaves from a high branch.',
+        'cur_desc': 'There is a giraffe standing by one of the tallest trees, eating leaves from a high branch.'
+    },
+    'bird\'s egg': {
+        'name': 'bird\'s egg',
+        'def_location': (2, 0, 1),
+        'cur_location': (2, 0, 1),
+        'def_desc': 'There is a bird\'s egg in one of the nests, apparently unguarded.',
+        'cur_desc': 'There is a bird\'s egg in one of the nests, apparently unguarded.'
     },
     'cow': {
         'name': 'cow',

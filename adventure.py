@@ -34,10 +34,6 @@ def pick_up_object():
                 print 'The cow and the penguin are whispering to each other. They are clearly up to something...'
     elif action == 'no':
         print 'You leave the %s where it is.' % object_name
-        if len(carrying) == 0:
-            print 'You are not carrying anything.'
-        else:
-            print 'You are carrying:' + str(carrying)
     else:
         print 'Sorry, I don\'t understand. Please enter yes/no.'
         pick_up_object()
@@ -52,12 +48,8 @@ def put_down_object():
             carrying.remove(object_name)
             print 'You put down the %s.' % object_name
         else:
-            print 'You are not carrying that. Let\s try that again!'
+            print 'You can\'t put that down, you\'re not carrying it!. Concentrate and try again!'
             put_down_object()
-        if len(carrying) == 0:
-            print 'You are not carrying anything.'
-        else:
-            print 'You are carrying:' + str(carrying)
     elif action == 'no':
         print 'OK, but don\'t blame me if your arms begin to ache!'
     else:
@@ -88,12 +80,19 @@ while True:
     if len(carrying) > 0:
         put_down_object()
 
+    if len(carrying) == 0:
+        print 'You are not carrying anything.'
+    else:
+        print 'You are carrying:' + str(carrying)
+
+    print 'From here, you can go...'
+
     valid_directions = {}
     for k, v in directions.iteritems():
         possible_position = (position[0] + v[0], position[1] + v[1], position[2] + v[2])
         possible_location = locations.get(possible_position)
         if possible_location:
-            print '%s from here is the %s.' % (k, possible_location['place'])
+            print '- %s to the %s.' % (k, possible_location['place'])
             valid_directions[k] = possible_position
 
     direction = raw_input('Which direction do you want to go?\n')
