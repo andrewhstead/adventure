@@ -57,10 +57,21 @@ def put_down_object():
         put_down_object()
 
 
+def show_map():
+    print '          -------- -------- -------- '
+    print '         | House  | Park   | Forest |'
+    print ' -------- -------- -------- -------- '
+    print '| Church | Lake   | Market |         '
+    print ' -------- -------- --------          '
+    print '                  | Fair   |         '
+    print '                   --------          '
+
+
 while True:
     place_name = locations[position]['place']
     place_desc = locations[position]['description']
 
+    show_map()
     print 'You are at the %s.' % place_name
     if len(carrying) == 0:
         print 'You are not carrying anything.'
